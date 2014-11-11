@@ -1,8 +1,8 @@
 
-public class Ellipse {
-	private double majoraxis;
-	private double minoraxis;
-	private double pi;
+public class Ellipse extends Shape{
+//	private double majoraxis;
+//	private double minoraxis;
+//	private double pi;
 	
 	public Ellipse(double m1, double m2){
 		if(m1>m2){majoraxis = m1; minoraxis = m2;}
