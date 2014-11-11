@@ -3,7 +3,7 @@ import java.io.*;
 
 public class FigureCalculation {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args){
 		// TODO Auto-generated method stub
 
 		FileReader fr = null;
