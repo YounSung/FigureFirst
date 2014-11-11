@@ -3,14 +3,17 @@ import java.io.*;
 
 public class FigureCalculation {
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		FileReader fr = null;
-		FileWriter fw = null;
+//		FileWriter fw = null;
 		
 		BufferedReader br = null;
 		BufferedWriter bw = null;
+		
+		
+		
 		
 		String s = null;
 	
@@ -18,8 +21,8 @@ public class FigureCalculation {
 			
 			fr = new FileReader("c://myclass/figureinformation.txt");
 			br = new BufferedReader(fr);
-			fw = new FileWriter("c://myclass/figuremeasures.txt");
-			bw = new BufferedWriter(fw);
+//			fw = new FileWriter("c://myclass/figuremeasures.txt");
+			bw = new BufferedWriter(new FileWriter("c://myclass/figuremeasures.txt"));
 			
 			
 			bw.write("Figure	Area	Perimeter");
@@ -66,16 +69,20 @@ public class FigureCalculation {
 				
 			}
 			
-
 			fr.close();
-			fw.close();
+//			fw.close();
 			br.close();
 			bw.close();
+			
+
+			
 		}
 		catch(Exception e){
+			System.out.println(e.getMessage());
 			e.printStackTrace();
+			
 		}
-		
+				
 
 		
 	}
