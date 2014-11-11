@@ -1,9 +1,9 @@
 
 
-public class Rectangle {
+public class Rectangle extends Shape{
 	
-	private double height;
-	private double width;
+//	private double height;
+//	private double width;
 	
 	public Rectangle(double w, double h){
 		width = w;
