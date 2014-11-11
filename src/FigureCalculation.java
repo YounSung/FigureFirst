@@ -7,7 +7,7 @@ public class FigureCalculation {
 		// TODO Auto-generated method stub
 
 		FileReader fr = null;
-//		FileWriter fw = null;
+		FileWriter fw = null;
 		
 		BufferedReader br = null;
 		BufferedWriter bw = null;
@@ -21,8 +21,8 @@ public class FigureCalculation {
 			
 			fr = new FileReader("c://myclass/figureinformation.txt");
 			br = new BufferedReader(fr);
-//			fw = new FileWriter("c://myclass/figuremeasures.txt");
-			bw = new BufferedWriter(new FileWriter("c://myclass/figuremeasures.txt"));
+			fw = new FileWriter("c://myclass/figuremeasures.txt");
+			bw = new BufferedWriter(fw);
 			
 			
 			bw.write("Figure	Area	Perimeter");
@@ -69,10 +69,10 @@ public class FigureCalculation {
 				
 			}
 			
-			fr.close();
-//			fw.close();
 			br.close();
+			fr.close();
 			bw.close();
+			fw.close();
 			
 
 			
