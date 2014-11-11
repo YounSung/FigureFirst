@@ -1,7 +1,8 @@
 
-public class Triangle {
-	private double height;
-	private double width;
+public class Triangle extends Shape{
+	
+//	private double height;
+//	private double width;
 	
 	public Triangle(double w, double h){
 		width = w;
@@ -14,6 +15,8 @@ public class Triangle {
 	
 	public double measurePerimeter(){
 		return 0;
-//		»ı°¢ÇØº¸´Ï ¹Øº¯, ³ôÀÌ¸¸ °¡Áö°í´Â »ï°¢ÇüÀÇ µÑ·¹ÀÇ ±æÀÌ¸¦ ¾Ë ¼ö°¡ ¾ø´Ù.
+//		ìƒê°í•´ë³´ë‹ˆ ë°‘ë³€, ë†’ì´ë§Œ ê°€ì§€ê³ ëŠ” ì‚¼ê°í˜•ì˜ ë‘˜ë ˆì˜ ê¸¸ì´ë¥¼ ì•Œ ìˆ˜ê°€ ì—†ë‹¤.
 	}
 }
+
+
